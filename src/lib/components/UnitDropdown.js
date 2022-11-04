@@ -83,12 +83,12 @@ const UnitDropdown = (props) => {
               };
               currentUnit = getTimeString(dateParts.hour, dateParts.minute, dateParts.amPm, hour12Format);
             }
-            if (currentUnit === value) {
-              scrollToActiveUnit(currentUnit, index + 1, dropdownRef);
-              setTimeout(() => {
-                scrollToActiveUnit(currentUnit, index + 1, dropdownRef);
-              }, 250);
-            }
+            // if (currentUnit === value) {
+            //   scrollToActiveUnit(currentUnit, index + 1, dropdownRef);
+            //   setTimeout(() => {
+            //     scrollToActiveUnit(currentUnit, index + 1, dropdownRef);
+            //   }, 250);
+            // }
             return (
               <span
                 data-key={currentUnit}
